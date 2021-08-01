@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block style %}
+.container{
+margin-top : 10px;
+}
+{% endblock style %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" my-4>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/two.jpeg" class="d-block w-100" alt="AJ Tutorial">
+        <div class="carousel-caption d-none d-md-block"
+          style=" background-color: yellow; color: black; border-radius: 30px; font-family: cursive" ;>
+          <h5>Free quality educational content</h5>
+          <p>E-GURU is the only platform where any can get quality content for free.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/two.jpeg" class="d-block w-100" alt="AJ Tutorial">
+        <div class="carousel-caption d-none d-md-block"
+          style="background-color: yellow ; color: black; border-radius: 30px; font-family: cursive" ;>
+          <h5>Join Us Today</h5>
+          <p>We are starting new classes on basics of English Grammar. So join us today</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/third.jfif" class="d-block w-100" alt="AJ Tutorial">
+        <div class="carousel-caption d-none d-md-block"
+          style="background-color: yellow ;color:black; border-radius: 30px; font-family: cursive" ;>
+          <h5>Nepal's first free Educational Platform</h5>
+          <p>We as a team are excited to make this dream a living reality.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 class="my-4 text-center"> Enroll yourself in these high quality but free online courses</h1>
+  <div class="card" style="width: 48%; display: inline-block; margin-right: 10px">
+    <div class="col">
+      <div class="card shadow-sm">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/oPDnggZMYcs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="width: 608px; height:500px; margin: 4px 5px">
+        </iframe>
+
+        <div class="card-body" style="width: 50vw">
+          <p class="card-text" style="">Grade 10 English. Chapter One: A World Guide to Good Manners </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="https://www.youtube.com/channel/UCJwQLma2aPtp6NYNo39CIAw"><button type="button"
+                  class="btn btn-sm btn-outline-secondary" target="_blank">Subscribe</button></a>
+              <a href="https://www.youtube.com/watch?v=oPDnggZMYcs&t=30s" target="_blank"><button type="button"
+                  class="btn btn-sm btn-outline-secondary">Like</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="width: 48%; display: inline-block;">
+    <div class="col">
+      <div class="card shadow-sm">
+        <iframe width="956" height="538" src="https://www.youtube.com/embed/DDITuLpJJnI" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="width: 608px; height:500px; margin: 4px 5px"></iframe>
+
+        <div class="card-body" style="width: 50vw">
+          <p class="card-text">Madhu Sir's Basics of English Grammar </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="https://www.youtube.com/channel/UCJwQLma2aPtp6NYNo39CIAw" target="_blank"><button type="button"
+                  class="btn btn-sm btn-outline-secondary">Subscribe</button></a>
+              <a href="https://www.youtube.com/watch?v=DDITuLpJJnI&t=13s" target="_blank"><button type="button"
+                  class="btn btn-sm btn-outline-secondary">Like</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
